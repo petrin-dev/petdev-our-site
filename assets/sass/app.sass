@@ -1,0 +1,791 @@
+$almond: #FFF6EB
+$black: #113537
+$icon-almond: invert(96%) sepia(7%) saturate(1413%) hue-rotate(303deg) brightness(103%) contrast(112%)
+$icon-black: invert(14%) sepia(7%) saturate(4113%) hue-rotate(135deg) brightness(98%) contrast(90%)
+
+$body-font: 'Poppins', sans-serif
+
+$pdev-gradient: linear-gradient(180deg, hsla(235, 81%, 94%, 1) 0%, hsla(235, 81%, 94%, 1) 100%)
+$pdev-gradient-fade: linear-gradient(180deg, hsla(235, 81%, 94%, 0.8) 0%, hsla(235, 81%, 94%, 0.8) 100%)
+
+html
+  scroll-behavior: smooth
+  overflow-x: hidden
+  height: 100%
+
+body
+  letter-spacing: 1.25px
+  overflow-x: hidden
+  height: 100%
+  background: $almond
+  color: $black
+  padding: 0
+  margin: 0
+  font-family: $body-font
+
+// Headings
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-family: 'Nunito', sans-serif
+  margin: 0
+
+h1, .h1
+  margin: 1em 0 0 0 
+
+h2, .h2
+  font-size: 1.25rem
+
+p
+  font-size: 1rem
+
+// SVG Icons
+
+.icon
+  &:hover
+    transform: scale(1.25)
+
+.icon-light
+  filter: $icon-almond
+
+.icon-dark
+  filter: $icon-black
+
+// Header & Nav
+
+.header-wrap
+  width: 100%
+  background-color: $black
+  position: fixed
+  height: 60px !important
+  overflow: hidden
+  z-index: 5
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+  display: grid
+  place-items: center
+
+.header
+  display: flex
+  margin: 0 auto
+  max-width: 1000px
+  width: 100%
+  position: relative
+  .logo-wrap
+    display: grid
+    place-items: center
+    padding: 0 0.5em
+  img
+    max-height: 40px
+    width: 146px
+    height: 40px
+  .color-toggle
+    position: absolute
+    right: 1.5em
+    top: 50%
+    transform: translateY(-50%)
+    color: $almond
+    font-size: 1.25rem
+    transition: color 0.5s 
+
+nav
+  display: flex
+  width: 100%
+  justify-content: flex-end
+  margin-right: 3em
+  padding: 0 0.5em
+
+nav ul
+  list-style-type: none
+  margin: auto 0
+  font-weight: 600
+  li
+    float: left
+    padding: 0 0.75em
+  a
+    color: $almond
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.button
+  color: $almond
+  background: $black
+  padding: 0.75em 1em
+  border: none
+  border-radius: 0.5em
+  font-size: 1rem
+  font-weight: 600
+  text-transform: uppercase
+  text-decoration: none
+  margin: 0 auto
+  transition: 0.5s all
+  &:hover
+    color: $black
+    background: $almond
+    outline: 1px solid $black
+    text-decoration: none
+
+.button-inverted
+  background: $almond
+  color: $black
+  &:hover
+    color: $almond
+    background: $black
+    outline: 1px solid $almond
+
+.main
+  margin: 0 auto
+  display: block
+  margin-top: 60px
+
+.main-inner, .footer
+  margin: 0 auto
+  width: 100%
+
+#hero-wrap, .about-us, #start-a-project, .footer-inner
+  max-width: 1000px
+
+// Hero Section
+
+#hero-wrap
+  position: relative
+  overflow: hidden
+
+.hero
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  h1
+    font-size: 4rem
+  .button
+    margin: 2em auto
+
+.hero > p
+  font-size: 2rem
+  font-weight: 300
+  margin-bottom: 1em
+
+.hero-image
+  height: 25vh
+  aspect-ratio: 3 / 2
+  background: url(/images/full-service-digital-project-management.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+.hero-services
+  ul
+    list-style: none
+    padding-left: 0
+    margin: 2em 0 0 0
+    display: flex
+    gap: 1em
+  li
+    flex-basis: 25%
+  a 
+    color: inherit
+    text-decoration: none
+    transition: 0.3s
+  .icon
+    margin: 0 auto
+    display: block
+    height: 4rem
+    &:hover
+      transform: scale(1.25)
+  .fa
+    font-size: 3.5rem
+    transition: 0.5s
+    display: block
+    margin: 0 auto
+    text-align: center
+  .hero-services-heading
+    font-size: 1.25rem
+    max-width: 17ch
+    margin: 1rem 0
+  .hero-services-subheading
+    font-size: 1rem
+
+.about-hero-image
+  background: url(/images/agency-experience-freelance-flexibility.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+.portfolio-hero-image
+  background: url(/images/all-shapes-and-sizes.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+.four-oh-four-hero-image
+  height: 45vh
+  margin-bottom: 12em
+  background: url(/images/page-not-found.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+
+.sub-hero
+  max-width: 70ch
+
+// About Us
+
+#about-us-wrap
+  background: $black
+
+.about-us
+  margin: 0 auto
+  color: $almond
+  padding: 2em 0
+  display: flex
+  justify-content: space-between
+
+.about-image
+  height: 25vh
+  aspect-ratio: 3 / 2
+  background: url(/images/over-two-decades-of-experience.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: right
+
+.about-text
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  p:last-of-type
+    margin-bottom: 2em
+
+.about-heading
+  display: flex
+  gap: 1rem
+  align-items: center
+  font-size: 1.25rem
+  a
+    color: $almond
+    &:hover
+      transform: scale(1.25)
+
+.rob-headshot
+  background: url(/images/rob-petrin.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: right
+  transform: rotate(-1)
+
+#rob-linkedin, #rob-twitter
+  width: 1rem
+
+.peace-of-mind
+  background: url(/images/peace-of-mind.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+.complete-project-management
+  height: 30vh
+  aspect-ratio: 5 / 4
+  background: url(/images/complete-project-management.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+// Start a Project
+
+#start-a-project
+  margin: 0 auto
+  scroll-padding-top: 8em
+  padding: 2em 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.start-form
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  .form-group
+    margin-top: 1em
+  label
+    display: block
+  input, label, textarea
+    margin: 0.25em 0
+  input, select, textarea
+    border-radius: 0.5em
+    font-family: $body-font
+    background-color: $black
+    border: 0
+    padding: 0.5em
+    color: $almond
+    font-weight: 600
+    width: 100%
+    &::placeholder
+      color: $almond
+      opacity: 0.75
+    &:focus:invalid
+      outline: 1px solid red
+  input[type="Submit"]
+    margin-top: 0
+    width: fit-content
+    padding: 0.75em 1em
+    border-radius: 0.5em
+    letter-spacing: 1.25px
+    -webkit-appearance: none
+
+
+  .field-your-message
+    margin-bottom: 1em
+
+.start-image
+  height: 40vh
+  width: 60%
+  background: url(/images/love-to-hear-from-you.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: right
+
+.start-image-about
+  aspect-ratio: 3 / 2
+  background: url(/images/your-next-project-awaits.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+.start-image-portfolio
+  background: url(/images/lets-plan-your-next-project.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+.start-image-services
+  background: url(/images/lets-kickstart-your-business.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+// Footer
+
+.footer
+  background: $black
+  color: $almond
+
+.footer-inner
+  padding: 1em 0
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+  
+.footer-socials
+  display: flex
+  justify-content: flex-start
+  gap: 1em
+  min-width: 5em
+  a
+    padding: 0 1em
+    color: $almond
+
+.footer-logo
+  display: grid
+  place-items: center
+  min-width: 5em
+  img
+    max-width: 1.5em
+
+
+// Sidebar
+
+#sidebar-menu
+  z-index: 2
+  height: 100%
+  position: fixed
+  left: 0
+  width: 250px
+  margin-top: 60px
+  transform: translateX(-250px)
+  transition: transform 250ms ease-in-out
+  background: $black
+
+.sidebar-menu-inner
+  margin: 0
+  padding: 0
+  border-top: 1px solid $almond
+  .start-a-project
+    background: $almond
+    a
+      color: $black
+      font-weight: 600
+
+  li
+    list-style: none
+    color: $almond
+    text-transform: uppercase
+    padding: 20px
+    cursor: pointer
+    border-bottom: 1px solid $almond
+
+    span
+      display: block
+      font-size: 14px
+      color: $almond
+
+    a
+      color: $almond
+      text-transform: uppercase
+      cursor: pointer
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+input
+  &[type="checkbox"]:checked ~ #sidebar-menu
+    transform: translateX(0)
+
+  &[type=checkbox]
+    transition: all 0.3s
+    box-sizing: border-box
+    display: none
+
+.sidebar-icon-toggle
+  transition: all 0.3s
+  box-sizing: border-box
+  cursor: pointer
+  position: absolute
+  z-index: 6
+  height: 100%
+  width: 100%
+  top: 1.5em
+  left: 1.5em
+  height: 22px
+  width: 22px
+
+.spinner
+  transition: all 0.3s
+  box-sizing: border-box
+  position: absolute
+  height: 3px
+  width: 100%
+  background-color: $almond
+
+.horizontal
+  transition: all 0.3s
+  box-sizing: border-box
+  position: relative
+  float: left
+  margin-top: 3px
+
+.diagonal
+  &.part-1
+    position: relative
+    transition: all 0.3s
+    box-sizing: border-box
+    float: left
+
+  &.part-2
+    transition: all 0.3s
+    box-sizing: border-box
+    position: relative
+    float: left
+    margin-top: 3px
+
+input[type=checkbox]:checked ~ .sidebar-icon-toggle >
+  .horizontal
+    transition: all 0.3s
+    box-sizing: border-box
+    opacity: 0
+
+  .diagonal
+    &.part-1
+      transition: all 0.3s
+      box-sizing: border-box
+      transform: rotate(135deg)
+      margin-top: 8px
+
+    &.part-2
+      transition: all 0.3s
+      box-sizing: border-box
+      transform: rotate(-135deg)
+      margin-top: -9px
+
+// Tab Bars 
+		
+.service-tabs
+  margin: 0 auto
+  width: 95%
+  max-width: 600px
+
+		
+.tab-wrap
+  display: flex
+  justify-content: space-between
+  border-bottom: 2px solid $black
+		
+.tab
+  padding: 1.5em 2em
+  text-align: center
+  &:hover
+    cursor: pointer
+  i
+    display: none
+
+.selected
+  font-weight: 600
+
+.tab-panel
+  min-height: 5em
+  max-width: 100%
+  padding-top: 50em
+  margin-top: -50em
+  
+
+.tab-image
+  width: 100%
+  height: 15vh
+  margin: 1em 0 1.5em 0
+
+.tab-content
+
+.hidden
+  display: none
+
+// Service Offering Images
+
+.tab-image
+  height: 20vh
+
+#design .tab-image
+  background: url(/images/digital-and-brand-design.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+#development .tab-image
+  background: url(/images/full-stack-web-development.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+#hosting .tab-image
+  background: url(/images/pay-as-you-scale-hosting.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+#growth .tab-image
+  background: url(/images/insight-driven-marketing-growth.webp)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+
+
+// Media Queries
+
+@media (max-width: 767px)
+  .header
+    justify-content: center
+  nav
+    display: none
+
+@media (min-width: 768px)
+  #open-sidebar-menum, .sidebar-icon-toggle
+    display: none
+
+@media (max-width: 1050px)
+  .tab-wrap
+    overflow-x: scroll
+    // scrollbar-width: none
+    position: relative
+    &::-webkit-scrollbar
+      height: 0.125em
+    //  display: none
+    &::-webkit-scrollbar-thumb
+      background: $black
+  .tab-wrap.dark
+    &::-webkit-scrollbar-thumb
+      background: $almond
+  .tab
+    padding: 1.5em 0.5em
+    font-size: 0.9rem
+    i
+      display: block
+      font-size: 2rem
+    span
+      display: none
+  .main-inner div
+    max-width: 400px
+
+  #hero-wrap
+    padding: 0
+  .hero
+    padding: 0 1em
+    h1
+      text-align: center
+      font-size: 1.6rem
+    p
+      font-size: 1.3rem
+  
+  .sub-hero
+    p
+      font-size: 1rem
+      
+  .hero-image
+    height: 15vh
+
+  .hero-services ul
+    flex-wrap: wrap
+    li
+      margin: 0 auto
+      padding: 0 1em
+      flex-basis: 100%
+
+  .about-us
+    padding: 2em 1em
+    flex-direction: column
+    max-width: 600px
+
+  .about-image
+    height: 10vh
+    background-position: right
+    margin-top: -1em
+
+  .rob-headshot
+    height: 20vh
+    margin-top: 0
+    margin-bottom: 0.75em
+    background-position: center
+    order: -1
+
+  #start-a-project
+    flex-direction: column
+    padding: 2em 1em
+    align-items: center
+    max-width: 400px
+  .start-image
+    height: 10vh
+    margin-top: -1em
+    background-position: right
+    align-self: flex-end
+  .start-form
+    input, textarea
+      max-width: 95%
+    input[type="Submit"]
+      margin-top: 0
+      width: fit-content
+      padding: 0.75em 1em
+    .h-captcha
+      margin-bottom: 1em
+
+  .footer
+    display: grid
+    place-items: center
+
+  .footer-inner
+    max-width: 300px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    gap: 0.5em
+    grid-template-areas: "copyright copyright" "socials logo"
+
+  .footer-copyright
+    grid-area: copyright
+    display: grid
+    place-items: center
+    small
+      font-size: 0.75rem
+
+  .footer-socials
+    grid-area: socials
+
+  .footer-logo
+    grid-area: logo
+
+
+// Dark Mode
+
+.color-toggle
+  text-decoration: none
+  img
+    width: 1em
+    transition: 0.5s display linear
+    display: none
+
+.show-moon
+  img:nth-child(2)
+    display: block
+.show-sun
+  img:nth-child(1)
+    display: block
+
+body.dark
+  background: $black
+  color: $almond
+  .header-wrap
+    background-color: $almond
+  nav ul
+    a
+      color: $black
+  .button
+    color: $black
+    background: $almond
+    &:hover
+      color: $almond
+      background: $black
+      outline: 1px solid $almond
+  .button-inverted
+    color: $almond
+    background: $black
+    &:hover
+      color: $black
+      background: $almond
+      outline: 1px solid $black
+  #about-us-wrap
+    background: $almond
+  .about-us
+    color: $black
+  .about-text 
+    a
+      color: $black
+    .button-inverted
+      color: $almond
+  input, select, textarea
+    background-color: $almond
+    color: $black
+    &::placeholder
+      color: $black
+  .footer
+    background: $almond
+    color: $black
+  .footer-socials
+    a
+      color: $black
+  #sidebar-menu
+    background: $almond
+  .sidebar-menu-inner
+    background: $almond
+    border-top: 1px solid $black
+    a
+      color: $black
+    .start-a-project
+      background: $black
+      a
+        color: $almond
+    li
+      color: $black
+      border-bottom: 1px solid $black
+    span
+      color: $black
+  .spinner
+    background: $black
+  .tab-wrap
+    border-bottom: 2px solid $almond
+  .icon-light
+    filter: $icon-black
+  .icon-dark
+    filter: $icon-almond
+
+// Hide Utility
+
+.hide
+  display: none

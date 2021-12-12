@@ -1,0 +1,21 @@
+{{ with .Params.Hero }}
+    <div class="main-inner" id="hero-wrap">
+        <div class="hero">
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Subtitle }}</p>
+            {{ with .Image }}
+                <div class="hero-image {{ . }}"></div>
+            {{ end }}
+            <div class="sub-hero">
+                <p>{{ .Subhero }}</p>
+                <p>{{ .SubheroTwo }}</p>
+            </div>
+            {{ with .More }}
+                {{ partial . }}
+            {{ end }}
+            {{ with .Button }}
+                <a class="button" href="{{ .Link }}">{{ .Text }}</a>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

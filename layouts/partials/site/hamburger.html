@@ -1,0 +1,15 @@
+<input class="open-sidebar-menu" id="open-sidebar-menu" type="checkbox" />
+<label class="sidebar-icon-toggle" for="open-sidebar-menu" title="Sidebar Toggle">
+  <div class="spinner diagonal part-1"></div>
+  <div class="spinner horizontal"></div>
+  <div class="spinner diagonal part-2"></div>
+</label>
+<div id="sidebar-menu">
+  <ul class="sidebar-menu-inner">
+    <li><a href="/">Home</a></li>
+    <li><a href="/services">Services</a></li>
+    {{/*  <li><a href="/portfolio">Portfolio</a></li>  */}}
+    <li><a href="/about">About</a></li>
+    <li class="start-a-project"><a href="#start-a-project" onclick="return startProject()">Start a Project</a></li>
+  </ul>
+</div>

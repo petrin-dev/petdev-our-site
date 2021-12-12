@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 56" width="204" height="56">
+	<title>Logo Light</title>
+	<defs>
+		<image  width="204" height="56" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAA4AQMAAACL74W+AAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAUSURBVHicY2AYBaNgFIyCUTCcAQAF6AABCMmmngAAAABJRU5ErkJggg=="/>
+		<image  width="204" height="56" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAA4CAMAAACG/+fPAAAAAXNSR0IB2cksfwAAAI1QTFRFAAAA//fr//br//bs//br//Xs///v//Xs//Xs//br//fv//br//fr//fn//Tq//Tq//Pr//Xp//br//Tr//Xr//Xr///f//Xq//Ts//Tq//br//Ts//Xr//fs//rq//jq//Ls//bq//bt//Tv//fq//Xp//ft//Xt//Xs//fs//br//Xp//bo//bq/+/vS1GUrgAAAC90Uk5TAECP3/+fEK/vzyC/fyAwYEBQr3DvgBCgYJBwkM+fMG9Q328wn7B/f1Bf74BwzxAfn4ChAAAEXElEQVR4nO1a2XabMBAFhGmMjEWIIZvjFtK0Jov///OK1hlJOAk5rq2c4/uSWOu9o21GKIoAcUJShVkWBYzsx4XiOZ/l40WSFIEel940EMx0MVZilloojs3w81jaTBO/BLNLpPHxSX4WpUP10itBnBLfZ2T8JeGqrU7B8rOgHxj+yspd1c1JWH4SxfXKonvj5Ncm5zZoHYAGKN85Wfc6Y30SZl+CWea1k3G9dzWFC/qhmIeT8PoSzmJCxVnMV7H5zy7RMcVUk7fGhP6cUvzwYvb7cLy1SR7er4kVDi0mJynZF8cNfbWTGrs5sRhuzM2+zHI5zTM6tRje/8GW+cHEVJ6YjiZRtqDUirKzRUVpp1Mea17toe4yXWUR5UmlLhDyiuqCeUI3Ufyb0mQ8ZJdZthieNjOGiisVUD5WZpMwYm6d5taumHz4/6e8N4Ao+1H6dmTjVJKm4UHTJa9yo/t6UvUGN5b8kVXHVpjK+ovFqChex8Sp9o0JePz7/MmtTk97lYKjNW2ffGC6om2aPme2aXq7SqG71b1cQ1svvhYcsWsx/HZlzdt/lb+HAIbospoOxGB4vIvFhdeaYPbSRHdI+WCtthHUFKWC526LAlV565j66YhpY7FdEF8MkWavUfe5TFoau9VKBGo02hnSpFdyYgpK0PTjzJ40kcxU7mWWjnqsDYBXQZuxI4YXG0z97GnhxMXkrkDMvWqJ6uZ3K9FaifuDIEzMtVw2BXgzBUs9S4FvKYae0jnY1xODgj5HDP5rgVcTy+AKxHDVQ0/czmqFyKGh1gLZrTH35w1sY0Jd43dRWmIU9o4MCscni0G7Gbqy2CrifGjyFBa1SESLkQ8vqvbcO128aHtJvgU0rXEIMUs9oDWIqfz4nefOPaeCoTVCrZEh6KqTMxP7KB9KtZ+uNL2N3j5usL5JYrKEqsu7nW6WgBjOXPSRGVPt5I0MNvhwsuH1/uTcZIIaMafWjNEUzh7exSy+XKwNS27Vebz5gpiZ2aiEPSvZkxbDmZM+ZtUFDLzY7eyB+WOR7/ElE8crFtPKtJXermHBmTkgZ+nLdDEEJmihbsFaECNOBAl7aKyB6TDzlZiqTclgrmlrya1JpLdLU1svOGoO6uIaxPDekNd5D0PKlElrMMMdsnIhrEaHY6g1DgJrEUW/iugPrpQpQ04tDI82rTRz2XW2H1ls627b2ClM31wXzCq8ZY37L0oqGWpG9rNk2M8su5otI4wts3qGFeK4Fea+U5+azpwJEebMdMMmLwT4BmLMqfLkZHhiRg6V0DAhOGPULRMazvdmoeIsJlScxYSKs5hQ8bEY1zUIGB+L+UZfm9f7xEAM8DpaMUD06T4x6IXGBZnTfrR6MOgqQtBjH9chdt/OjL7iCgWJQ9b9qLJbOQUCfgqYO1T9T1q1U+IbvTfz18SufX/oAoLz3uxtpEhhqZn2NfLIsJjS8W+NDK5qacAPAS27v7PvNstSIGgpHIqn8wX4H77xU8pl3cAxAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<use id="Layer 1" href="#img2" x="0" y="0" />
+</svg>

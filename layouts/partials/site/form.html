@@ -1,0 +1,18 @@
+{{ with .Params.Form }}
+    <div class="main-inner" id="start-a-project-wrap">
+        <div id="start-a-project">
+            <div class="start-form">
+                <h2>{{ .Title }}</h2>
+                <form class="form-wrap" id="start-a-project-form" method="POST" enctype="multipart/form-data" netlify>
+                    <div class="form-group field-your-name"><label for="your-name">First & Last Name<span class="formbuilder-required">*</span></label><input class="form-control" id="your-name" type="text" placeholder="Your Name" name="your-name" access="false" maxlength="35" required aria-required="true" /></div>
+                    <div class="form-group field-your-email"><label for="your-email">Email Address<span class="formbuilder-required">*</span></label><input class="form-control" id="your-email" type="email" name="your-email" access="false" maxlength="35" placeholder="Your Email" required aria-required="true" /></div>
+                    <div class="form-group field-your-subject"><label for="your-subject">Subject<span class="formbuilder-required">*</span></label><input class="form-control" id="your-subject" type="text" placeholder="Your Subject" name="your-subject" access="false" maxlength="35" required aria-required="true" /></div>
+                    <div class="form-group field-your-message"><label for="your-message">What can we do for you?<span class="formbuilder-required">*</span></label><textarea class="form-control" id="your-message" type="textarea" name="your-message" access="false" maxlength="350" rows="5" placeholder="Your Message" required aria-required="true"></textarea></div>
+                    <button class="button" type="submit" id="form-submit" />Submit</button>
+                </form>
+                <p id="submit-message" style="display: none">Thank you for your submission! Someone will reach out to you soon.</p>
+            </div>
+            <div class="start-image {{ .Image }}"></div>
+        </div>
+    </div>
+{{ end }}

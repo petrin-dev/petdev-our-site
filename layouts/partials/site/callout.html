@@ -1,0 +1,29 @@
+{{ with .Params.Callout }}
+    <div class="main-inner" id="about-us-wrap">
+        <div class="about-us">
+            <div class="about-text">
+                <div class="about-heading">
+                    <h2>{{ .Title }}</h2>    
+                    <a href="https://linkedin.com/in/robpetrin" target="_blank" id="rob-linkedin" rel="noopener" style="display: none;" title="Rob's LinkedIn">
+                        <img src="/icons/linkedin-svgrepo-com.svg" alt="Rob's LinkedIn" class="icon icon-light" width="16" height="16">
+                    </a>
+                    <a href="https://twitter.com/robpetrin" target="_blank" id="rob-twitter" rel="noopener" style="display: none;" title="Rob's Twitter">
+                        <img src="/icons/twitter-svgrepo-com.svg" alt="Rob's LinkedIn" class="icon icon-light" width="16" height="16">
+                    </a>
+                </div>
+                <p>{{ .Subtitle }}</p>
+                {{ with .Subtitletwo }}
+                    <p>{{ . }}</p>
+                {{ end }}
+                {{ with .Button }}
+                <div>
+                    <a href="{{ .Link }}" class="button button-inverted">
+                        {{ .Text }}
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+            <div class="about-image {{ .Image }}"></div>
+        </div>
+    </div>
+{{ end }}
