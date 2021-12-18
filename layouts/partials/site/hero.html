@@ -1,5 +1,5 @@
 {{ with .Params.Hero }}
-    <div class="main-inner" id="hero-wrap">
+    <section class="main-inner" id="hero-wrap">
         <div class="hero">
             <h1>{{ .Title }}</h1>
             <p>{{ .Subtitle }}</p>
@@ -17,5 +17,5 @@
                 <a class="button" href="{{ .Link }}">{{ .Text }}</a>
             {{ end }}
         </div>
-    </div>
+    </section>
 {{ end }}
