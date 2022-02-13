@@ -577,17 +577,27 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
   background-repeat: no-repeat
   background-position: center
 
+.blog-item
+  background: red
+  display: flex
+  justify-content: center
+
+.blog-image
+  background: blue
+
+.blog-content
+  background: green
 
 // Media Queries
 
-@media (max-width: 767px)
+@media (max-width: 835px)
   .header
     justify-content: center
   nav
     display: none
 
-@media (min-width: 768px)
-  #open-sidebar-menum, .sidebar-icon-toggle
+@media (min-width: 835px)
+  #open-sidebar-menu, .sidebar-icon-toggle
     display: none
 
 @media (max-width: 1050px)
@@ -612,7 +622,9 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
     span
       display: none
   .main-inner div
-    max-width: 400px
+    margin: auto
+    width: 90%
+    max-width: 600px
 
   #hero-wrap
     padding: 0
@@ -700,7 +712,6 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
 
   .footer-logo
     grid-area: logo
-
 
 // Dark Mode
 
