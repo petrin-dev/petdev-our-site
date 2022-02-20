@@ -51,6 +51,12 @@ if (!(document.body.scrollHeight > document.body.clientHeight)) {
   footer.style.bottom = 0
 }
 
+// Link to Homepage CTA if no CTA
+if (!(document.querySelector('#start-a-project-wrap'))) {
+  let start = document.querySelector('[title="Start a Project"]')
+  start.href = '/#start-a-project'
+}
+
 // Close sidebar menu when clicking Form Link
 
 function startProject() {
