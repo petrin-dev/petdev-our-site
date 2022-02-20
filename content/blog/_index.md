@@ -1,11 +1,9 @@
 ---
 title: "Blog"
 image: "none"
-description: "Full-service digital project management from a team with over two decades of experience with design, development, hosting, and marketing."
+description: "The latest insights from the team at Petrin Development Services, focused on website best practices and marketing growth."
 
 hero:
     title: "Latest Blog Posts"
     subtitle: "Insights on the Web & Marketing"
 ---
-
-fff

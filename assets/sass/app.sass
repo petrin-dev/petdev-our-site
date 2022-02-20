@@ -38,6 +38,11 @@ h2, .h2
 p
   font-size: 1rem
 
+a
+  color: inherit
+  &:hover
+    opacity: 0.6
+
 // SVG Icons
 
 .icon
@@ -79,7 +84,7 @@ p
     height: 40px
   .color-toggle
     position: absolute
-    right: 1.5em
+    right: 0.75rem
     top: 50%
     transform: translateY(-50%)
     color: $almond
@@ -90,7 +95,7 @@ nav
   display: flex
   width: 100%
   justify-content: flex-end
-  margin-right: 3em
+  margin-right: 2rem
   padding: 0 0.5em
 
 nav ul
@@ -141,8 +146,9 @@ nav ul
   margin: 0 auto
   width: 100%
 
-#hero-wrap, .about-us, #start-a-project, .footer-inner
+#hero-wrap, .about-us, #start-a-project, .footer-inner, .blog-item, .article-content
   max-width: 1000px
+  margin: 0 auto
 
 // Hero Section
 
@@ -388,9 +394,10 @@ nav ul
 .footer-logo
   display: grid
   place-items: center
-  min-width: 5em
+  min-width: 3.5rem
+  margin-top: -0.6rem
   img
-    max-width: 1.5em
+    max-width: 2em
 
 
 // Sidebar
@@ -534,8 +541,8 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
 .tab-panel
   min-height: 5em
   max-width: 100%
-  padding-top: 50em
-  margin-top: -50em
+  padding-top: 20em
+  margin-top: -20em
   
 
 .tab-image
@@ -577,16 +584,69 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
   background-repeat: no-repeat
   background-position: center
 
+.blog-item, .article-content
+  .meta
+    font-size: 1.5rem
+    margin: 1em 0
+    display: flex
+    justify-content: space-between
+    span
+      margin: 0 2rem
+
 .blog-item
-  background: red
   display: flex
-  justify-content: center
+  justify-content: space-between
+  gap: 1rem
+  margin-bottom: 4rem
+  .blog-image
+    width: 100%
+    img
+      width: 100%
+      height: auto
+      border-radius: 1em
+  .blog-content
+    margin: 0
+    text-align: right
+  h2
+    font-size: 2.25rem
+    transition: 1s text-docoration linear
+  a
+    color: inherit
+    text-decoration: none
+  h2:hover
+    text-decoration: underline
+  .meta
+    justify-content: flex-end
+  .date
+    width: 11ch
+  &:nth-of-type(2n)
+    flex-direction: row-reverse
+    .blog-content
+      text-align: left
+    .meta
+      justify-content: flex-start
 
-.blog-image
-  background: blue
-
-.blog-content
-  background: green
+.article-content
+  margin: 0 auto
+  padding: 0 0 4em
+  h1
+    font-size: 4rem
+  .article-image
+    text-align: center
+    margin-top: 1.5rem
+    img
+      border-radius: 1em
+      max-width: 100%
+      height: auto
+      object-fit: cover
+      aspect-ratio: 5 / 2
+  .social-shares
+    display: flex
+    img
+      height: 2rem
+      margin: 0 1.5rem
+  .description
+    opacity: 0.6
 
 // Media Queries
 
@@ -622,7 +682,7 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
     span
       display: none
   .main-inner div
-    margin: auto
+    margin: 0 auto
     width: 90%
     max-width: 600px
 
@@ -698,7 +758,7 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
     grid-template-columns: 1fr 1fr
     grid-template-rows: 1fr 1fr
     gap: 0.5em
-    grid-template-areas: "copyright copyright" "socials logo"
+    grid-template-areas: "copyright copyright" "socials socials"
 
   .footer-copyright
     grid-area: copyright
@@ -712,6 +772,49 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle >
 
   .footer-logo
     grid-area: logo
+
+  .blog-item
+    flex-direction: column
+    padding-bottom: 4em
+    gap: 1em
+    h2
+      font-size: 1.5rem
+    .blog-content
+      text-align: left
+    .meta
+      font-size: 1rem
+    .date
+      width: 20ch
+    &:nth-of-type(2n)
+      flex-direction: column
+      .blog-content
+        text-align: left
+
+  .article-content
+    h1
+      padding-top: 2rem
+      font-size: 1.5rem
+      text-align: center
+    .meta
+      font-size: 1.25rem
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      div
+        text-align: center
+      span
+        display: none
+    .date
+      flex-basis: 50%
+    .readtime
+      flex-basis: 50%
+    .social-shares
+      padding-top: 1.5rem
+      flex-basis: 100%
+      justify-content: space-around
+      img
+        height: 1.25rem
 
 // Dark Mode
 

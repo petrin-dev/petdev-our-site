@@ -1,18 +1,26 @@
 {{ define "main" }}
+<article class="main-inner">
     {{ range .Paginator.Pages }}
-        <article class="main-inner">
             <div class="blog-item">
-                <div class="blog-image">
-                    {{ .Title }}
-                </div>
-                <div class="blog-content">
-                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                </div>
+                    <a href="{{ .Permalink }}">
+                        <div class="blog-image">
+                            <img src="{{ .Params.Image }}" alt="Image for {{ .Title }}" title="{{ .Title }}">
+                        </div>
+                </a>
+                <a href="{{ .Permalink }}">
+                    <div class="blog-content">
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</h2>
+                        <div class="meta">
+                            <div class="date">{{ .PublishDate.Format "2 Jan 2006" }}</div>
+                            <span>•</span>
+                            <div class="readtime">{{ .Content | countwords }}</div>
+                        </div>
+                        <p>{{ .Description}} </p>
+                    </div>
+                </a>
             </div>
-            {{ .Content }}
+            {{ end }}
         </article>
-    {{ end }}
-
     {{ template "_internal/pagination.html" . }}
 
 {{ end }}

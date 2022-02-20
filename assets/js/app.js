@@ -30,6 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
   bindTabs()
 })
 
+// Calculate Blog Readtime
+if (document.querySelector('.readtime')) {
+  let readTime = document.querySelector('.readtime')
+  let amount = readTime.textContent
+  amount /= 200
+  let remainder = amount - Math.floor(amount)
+  let min = 'min read'
+  amount = Math.floor(amount)
+  if (remainder > 0.49) {
+    amount += 1
+  }
+  readTime.textContent = `${amount} ${min}`
+}
+
 // Close sidebar menu when clicking Form Link
 
 function startProject() {

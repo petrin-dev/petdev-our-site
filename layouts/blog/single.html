@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ partial "site/hero.html" . }}
+    <article class="main-inner">
+        <div class="article-content">
+                <h1>{{ .Title }}</h1>
+                <div class="meta">
+                    <div class="date">{{ .PublishDate.Format "2 Jan 2006" }}</div>
+                    <span>•</span>
+                    <div class="readtime">{{ .Content | countwords }}</div>
+                    <span>•</span>
+                    <div class="social-shares">
+                        <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank">
+                            <img src="/icons/twitter-svgrepo-com.svg" alt="Twitter Logo" title="Twitter Logo" class="icon icon-dark"> 
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank">
+                            <img src="/icons/facebook-svgrepo-com.svg" alt="Facebook Logo" title="Facebook Logo" class="icon icon-dark">
+                        </a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank">
+                            <img src="/icons/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" title="LinkedIn Logo" class="icon icon-dark">
+                        </a>
+                        <a href="http://pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ .Params.Image }}&description={{ .Title }}" target="_blank">
+                            <img src="/icons/pinterest-social-logo-svgrepo-com.svg" alt="Pinterest Logo" title="Pinterest Logo" class="icon icon-dark">
+                        </a>
+                        <a href="http://www.tumblr.com/share?v=3&u={{ .Permalink }}&t={{ .Title }}" target="_blank">
+                            <img src="/icons/tumblr-social-media-svgrepo-com.svg" alt="Tumblr Logo" title="Tumblr Logo" class="icon icon-dark">
+                        </a>
+                    </div>
+                </div>
+                <div class="description">{{ .Description }}</div>
+                <div class="article-image">
+                    <img src="{{ .Params.Image }}">
+                </div>
+                <div class="content">
+                    {{ .Content }}
+                </div>
+        </div>
+    </article>
+{{ end }}
