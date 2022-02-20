@@ -1,7 +1,7 @@
 ---
 title: "Speed & Substance: (Still) the Keys to SEO Success"
 description: "Google keeps changing the game with a renewed focus on mobile experience. However, maintaining good fundamentals remains the best way to keep a hygienic web presence."
-date: "2022-02-15"
+date: "2022-02-20"
 image: "https://images.unsplash.com/photo-1617560611911-85e1055544cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
 
 ---
