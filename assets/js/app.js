@@ -1,9 +1,7 @@
 // Set First Image as OG Image
 let firstImage = document.querySelector('main img')
-let metaImage = document.createElement('meta')
-metaImage.property = 'og:image'
+let metaImage = document.querySelector('meta[property="og:image"')
 metaImage.content = firstImage.src
-document.head.appendChild(metaImage)
 
 // Tab Layout Configuration
 
