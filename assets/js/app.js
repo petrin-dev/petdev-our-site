@@ -45,7 +45,7 @@ if (document.querySelector('.readtime')) {
 }
 
 // Fix Footer if no Scrollbars
-if (!(ocument.body.scrollHeight > document.body.clientHeight)) {
+if (!(document.body.scrollHeight > document.body.clientHeight)) {
   let footer = document.querySelector('.footer')
   footer.style.position = 'fixed'
   footer.style.bottom = 0
