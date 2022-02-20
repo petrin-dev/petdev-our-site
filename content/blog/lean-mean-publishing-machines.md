@@ -3,6 +3,7 @@ title: "Gutenberg: Building Lean, Mean, Publishing Machines"
 description: "With the release of WordPress 5.9, the original promise of Gutenberg is finally being realized: full-site editing. Paired with lean theme development, publishing is as democratized as ever."
 date: "2022-02-20"
 image: "https://images.unsplash.com/photo-1566207462754-97c86c31db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+draft: true
 
 ---
 
