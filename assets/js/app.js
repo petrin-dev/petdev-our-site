@@ -4,7 +4,6 @@ let metaImage = document.createElement('meta')
 metaImage.property = 'og:image'
 metaImage.content = firstImage.src
 document.head.appendChild(metaImage)
-console.log(metaImage)
 
 // Tab Layout Configuration
 
