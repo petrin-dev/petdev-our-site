@@ -53,8 +53,10 @@ if (!(document.body.scrollHeight > document.body.clientHeight)) {
 
 // Link to Homepage CTA if no CTA
 if (!(document.querySelector('#start-a-project-wrap'))) {
-  let start = document.querySelector('#start-project-button')
-  start.href = '/#start-a-project-hello'
+  let startMobile = document.querySelector('#start-project-button-mobile')
+  let startDesktop = document.querySelector('#start-project-button-desktop')
+  startMobile.href = '/#start-a-project'
+  startDesktop.href = '/#start-a-project'
 }
 
 // Close sidebar menu when clicking Form Link
