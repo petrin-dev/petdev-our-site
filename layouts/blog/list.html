@@ -12,8 +12,6 @@
                         <h2><a href="{{ .Permalink }}">{{ .Title }}</h2>
                         <div class="meta">
                             <div class="date">{{ .PublishDate.Format "2 Jan 2006" }}</div>
-                            <span>•</span>
-                            <div class="readtime">{{ .Content | countwords }}</div>
                         </div>
                         <p>{{ .Description}} </p>
                     </div>
