@@ -53,7 +53,7 @@ if (!(document.body.scrollHeight > document.body.clientHeight)) {
 
 // Link to Homepage CTA if no CTA
 if (!(document.querySelector('#start-a-project-wrap'))) {
-  let start = document.querySelector('[title="Start a Project"]')
+  let start = document.querySelector('#start-project-button')
   start.href = '/#start-a-project'
 }
 
