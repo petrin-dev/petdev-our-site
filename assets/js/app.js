@@ -44,6 +44,13 @@ if (document.querySelector('.readtime')) {
   readTime.textContent = `${amount} ${min}`
 }
 
+// Fix Footer if no Scrollbars
+if (!(ocument.body.scrollHeight > document.body.clientHeight)) {
+  let footer = document.querySelector('.footer')
+  footer.style.position = 'fixed'
+  footer.style.bottom = 0
+}
+
 // Close sidebar menu when clicking Form Link
 
 function startProject() {
