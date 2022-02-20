@@ -120,7 +120,9 @@ document.querySelector("#mode-toggle").addEventListener("click", function(event)
 }
 
 window.onload = () => {
-  loadTab()
+  if (document.querySelector('.tab')) {
+    loadTab()
+  }
 
   if (localStorage.getItem('darkMode') === 'true') {
     colorToggle(false)
