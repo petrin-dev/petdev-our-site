@@ -12,6 +12,6 @@
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ hugo.Generator }}
 {{ with .Params.Image }}
-<meta property="og:image" content="{{ . }}" />
+<meta property="og:image" content="{{ . }}" id="meta-image" />
 <meta property="twitter:image" content="{{ . }}" />
 {{ end }}

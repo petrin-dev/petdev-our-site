@@ -1,6 +1,6 @@
 // Set First Image as OG Image
 let firstImage = document.querySelector('main img')
-let metaImage = document.querySelector('meta[property="og:image"')
+let metaImage = document.querySelector('#meta-image')
 metaImage.content = firstImage.src
 
 // Tab Layout Configuration
