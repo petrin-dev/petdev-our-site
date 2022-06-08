@@ -12,13 +12,13 @@ Full Site Editing (or FSE), as I'm sure you'll hear of more and more in coming m
 
 To leverage this leap forward, you'll need a [Block Theme that explicitly supports Full Site Editing](https://wordpress.org/themes/tags/full-site-editing/). The most prominent of this, no surprise, is [Twenty Twenty-Two by Automattic](https://pcm.wordpress.org/themes/twentytwentytwo/). As is often the case, the creators of WordPress update the built-in default theme to showcase the newest features, while external theme makers catch up to follow suit.
 
-![The new-look Appearance Menu](/images/full-site-editing-editor-appearance.jpg "The new-look Appearance Menu")
+![The new-look Appearance Menu](/images/full-site-editing-editor-appearance.png "The new-look Appearance Menu")
 
 When activated, your Appearance menu will largely be cleared out. A singular **Editor** option replaces Customizer, Menus, Widgets, and other familiar favorites. In this menu, you'll be able to edit Templates (for posts, pages, and custom post types), Template Parts (header, and footer, of which you can have multiples), and Styles (such as selecting color pres-sets, typography options, and global layout options). As of this writing, some of the features feel immature, and we look forward to seeing how they develop in upcoming "point" releases, such as 6.1 and 6.2.
 
 While we're cautiously optimistic about full-site editing, we're over-the-moon with how it pares down the number of files, and the length of the develoment process. Gone are the folders upon folders of PHP files, and the archaiac content and querying templates. You can still use these, if you'd like. But they're largely supplanted by Gutenberg, specifically FSE and the [Query Loop](https://wordpress.org/support/article/query-loop-block/) block. In some instances, however, extension is still required.
 
-![Look ma! No PHP!](/images/twenty-twenty-two-limited-php "Look ma! No PHP!")
+![Look ma! No PHP!](/images/twenty-twenty-two-limited-php.png "Look ma! No PHP!")
 
 There are dozens of plugin suites that provide dozens upon dozens of Gutenberg blocks, with countless customization options. These are great, but largely unnecessary if you're already working with a developer. While the meganavigation options are limited using default Gutenberg blocks, and lackluster or overdeveloped in plugin suites, they can be achieved with relative ease using ACF custom blocks.
 
